@@ -25,6 +25,13 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    animation: zoom 20s linear backwards;
+}
+@keyframes zoom{
+    100%{
+        width: 150%;
+        height: 150%;
+    }
 }
 .content-cover{
     width: 100%;
@@ -37,21 +44,24 @@
     display: grid;
     place-items: center;
 }
-.content-cover .text-box{
+.text-box{
     text-align: center;
 }
 
 .content-cover .text-box h3{
     color: darkgoldenrod;
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 5px;
     margin-bottom: 15px;
+    cursor: default;
 }
 .content-cover .text-box h1{
     font-size: 80px;
     color: #fff;
     margin-bottom: 20px;
+    animation-delay: 0.5s;
+    cursor: default;
 }
 .content-cover .text-box a{
     width: 300px;
@@ -65,6 +75,23 @@
     font-size: 20px;
     margin: 30px auto 0;
     font-weight: 600;
+    transition: 0.5s;
+    animation-delay: 1s;
+}
+.content-cover .text-box a:hover{
+    background: darkgoldenrod;
+    color: black;
+}
+
+.anim{
+    animation: text 0.5s linear backwards;
+}
+
+@keyframes text{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
 }
 .show{
     display: grid;
@@ -76,11 +103,17 @@
     left: 50%;
     transform: translateX(-50%);
 }
-.home-pagination .lists{
+.lists{
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background: darkgoldenrod;
+    background: transparent;
     display: inline-block;
     margin: 0 10px;
+    border: 2px solid darkgoldenrod;
+    transition: 0.5s;
+}
+.active{
+    background: darkgoldenrod;
+    transition: 0.5s;
 }
