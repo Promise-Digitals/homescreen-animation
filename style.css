@@ -25,7 +25,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    animation: zoom 20s linear backwards;
+    animation: zoom 18s linear backwards;
 }
 @keyframes zoom{
     100%{
