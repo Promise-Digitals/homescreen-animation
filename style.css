@@ -50,29 +50,29 @@
 
 .content-cover .text-box h3{
     color: darkgoldenrod;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 500;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     margin-bottom: 15px;
     cursor: default;
 }
 .content-cover .text-box h1{
-    font-size: 80px;
+    font-size: 60px;
     color: #fff;
     margin-bottom: 20px;
     animation-delay: 0.5s;
     cursor: default;
 }
 .content-cover .text-box a{
-    width: 300px;
-    height: 70px;
-    border: 2px solid darkgoldenrod;
+    width: 250px;
+    height: 50px;
+    border: 1px solid darkgoldenrod;
     display: block;
     color: darkgoldenrod;
     text-align: center;
-    line-height: 70px;
+    line-height: 50px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     margin: 30px auto 0;
     font-weight: 600;
     transition: 0.5s;
@@ -104,9 +104,8 @@
     transform: translateX(-50%);
 }
 .lists{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
+    width: 20px;
+    height: 20px;
     background: transparent;
     display: inline-block;
     margin: 0 10px;
@@ -116,4 +115,5 @@
 .active{
     background: darkgoldenrod;
     transition: 0.5s;
+    border-radius: 50%;
 }
